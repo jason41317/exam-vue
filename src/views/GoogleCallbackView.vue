@@ -16,6 +16,7 @@ export default {
                 this.getAuthenticatedUser()
                     .then(({ data }) => {
                         this.userState.setUser(data)
+                        this.userState.isLoggedIn = true
                         this.$router.push({ name: 'home'})
                         // console.log(this.userState)
                     })

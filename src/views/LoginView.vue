@@ -33,8 +33,10 @@ export default {
                     this.getAuthenticatedUser()
                         .then(({ data }) => {
                             this.userState.setUser(data)
+                            this.userState.isLoggedIn = true
+                            // console.log(this.userState.isLoggedIn)
                             this.$router.push({ name: 'home'})
-                            console.log(this.userState)
+                            // console.log(this.userState)
                         })
                         .catch(error => {
                             console.log(error)

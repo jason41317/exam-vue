@@ -28,6 +28,7 @@ export default {
         onLogout() {
             this.revokeAuthentication().then(data => {
                 this.userState.logoutUser()
+                this.userState.isLoggedIn = false
                 this.$router.push({ path: '/login' })
                 localStorage.clear()
             }).catch(error => {
