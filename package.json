@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios-case-converter": "^0.11.1",
     "bootstrap": "^5.2.3",
     "pinia": "^2.0.28",
     "vue": "^3.2.45",
